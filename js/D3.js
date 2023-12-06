@@ -27,18 +27,6 @@ pageForm.addEventListener("submit", (e) => {
 
   const trash = document.getElementById("btn");
   trash.addEventListener("click", () => {
-    console.log("btn trovato");
-    trash.parentElement.remove("div");
+    trash.parentElement.parentElement.remove();
   });
 });
-
-// const trashbtn = () => {
-//     const element = document.getElementById("taskList");
-//     const addbtn = document.createElement("div");
-//     toDolistThings.innerHTML = `
-
-//   <i class='bx bx-trash'></i>
-
-//   `;
-//     trashbtn.appendChild(element);
-//   };
