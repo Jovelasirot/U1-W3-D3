@@ -7,8 +7,8 @@ pageForm.addEventListener("submit", (e) => {
   toDolistThings.id = "taskList";
   toDolistThings.innerHTML = `
 
- <span>${addInputField.value}<span>
- <i class='bx bx-trash' id ="btn"></i>
+ <span>${addInputField.value} <i class='bx bx-trash' id ="btn"></i><span>
+
 
  `;
   const listShowing = document.getElementById("list");
@@ -28,7 +28,7 @@ pageForm.addEventListener("submit", (e) => {
   const trash = document.getElementById("btn");
   trash.addEventListener("click", () => {
     console.log("btn trovato");
-    trash.parentElement.remove();
+    trash.parentElement.remove("div");
   });
 });
 
